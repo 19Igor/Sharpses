@@ -1,0 +1,11 @@
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/bin/Debug/net7.0/Library_1.deps.json
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/bin/Debug/net7.0/Library_1.dll
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/bin/Debug/net7.0/Library_1.pdb
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.AssemblyInfoInputs.cache
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.AssemblyInfo.cs
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.csproj.CoreCompileInputs.cache
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.dll
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/refint/Library_1.dll
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/Library_1.pdb
+/Users/igorepov/Documents/Studing/С#Projects/Lab_1/Library_1/obj/Debug/net7.0/ref/Library_1.dll
