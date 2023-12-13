@@ -14,20 +14,20 @@ namespace Lab4;
 
 public sealed class ColosseumExperimentWorker : BackgroundService
 {
-    private readonly IСolosseumSandbox _colosseumDbSandbox;
+    private readonly IСolosseumSandbox _colosseumDbDbSandbox;
     private int _successOutcomeAmount;
     private readonly ApplicationDbContext _context;
     private readonly IDeckShuffler _deckShuffler;
     private readonly bool _dbMode;
     
     public ColosseumExperimentWorker(
-            IСolosseumSandbox colosseumSandbox, 
+            IСolosseumSandbox colosseumDbSandbox, 
             ApplicationDbContext applicationDbContext,
             IDeckShuffler deckShuffler,
             ApplicationDbContext context,
             IConfiguration configuration)
     {
-        _colosseumDbSandbox = colosseumSandbox;
+        _colosseumDbDbSandbox = colosseumDbSandbox;
         _deckShuffler = deckShuffler;
         _context = applicationDbContext;
         _context = context;
@@ -48,9 +48,9 @@ public sealed class ColosseumExperimentWorker : BackgroundService
                     _deckShuffler.Shuffle(entireDeck);
                     _context.ExperimentConditions.Add(new ExperimentCondition(entireDeck.Cards)); // List<ACard>
                     await _context.SaveChangesAsync(stoppingToken);
-                    _colosseumDbSandbox.SetEntireDeck(entireDeck);
+                    _colosseumDbDbSandbox.SetEntireDeck(entireDeck);
                     
-                    _successOutcomeAmount += await _colosseumDbSandbox.Experiment();
+                    _successOutcomeAmount += await _colosseumDbDbSandbox.Experiment();
                 }
                 else
                 {
@@ -62,8 +62,8 @@ public sealed class ColosseumExperimentWorker : BackgroundService
                     Debug.Assert(one != null, nameof(one) + " != null");
                     entireDeck.Cards = one.Cards.ToList();
                     
-                    _colosseumDbSandbox.SetEntireDeck(entireDeck);
-                    _successOutcomeAmount += await _colosseumDbSandbox.Experiment();
+                    _colosseumDbDbSandbox.SetEntireDeck(entireDeck);
+                    _successOutcomeAmount += await _colosseumDbDbSandbox.Experiment();
                 }
             }
             

@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IStrategy, Strategy1>();
+// builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

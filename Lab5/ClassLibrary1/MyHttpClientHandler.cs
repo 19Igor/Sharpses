@@ -1,15 +1,13 @@
-using System.Net.Http.Json;
 using System.Text;
-using ClassLibrary1.Implementations;
 using Newtonsoft.Json;
 
 namespace ClassLibrary1;
 
-public class MyHttpClientHandler
+public sealed class MyHttpClientHandler : IDisposable
 {
-    public MyHttpClientHandler()
-    {
-    }
+    private readonly HttpClient _httpClient;
+
+    public MyHttpClientHandler(HttpClient httpClient) => _httpClient = httpClient;
 
     public async Task<int> SendDeck(Deck deck, int port)
     {
@@ -17,16 +15,15 @@ public class MyHttpClientHandler
         return res;
     }
 
-    private static async Task<int> SendDeckAsync(Deck deck, int port)
+    private async Task<int> SendDeckAsync(Deck deck, int port)
     {
-        using var client = new HttpClient();
         string json = JsonConvert.SerializeObject(deck);
         HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
         
         int responseBody = 0;
         try
         {
-            using var response = await client.PostAsync($"http://localhost:{port}/game/getchoice", content);
+            using var response = await _httpClient.PostAsync($"http://localhost:{port}/game/getchoice", content);
             response.EnsureSuccessStatusCode();
             responseBody = Convert.ToInt32(await response.Content.ReadAsStringAsync());
         }
@@ -37,5 +34,6 @@ public class MyHttpClientHandler
         }
         return responseBody;
     }
-    
+
+    public void Dispose() => _httpClient?.Dispose();
 } 
