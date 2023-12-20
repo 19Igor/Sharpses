@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "7uu7wS0V24pRrCU5o1u+CdA8l4EI5+XfZDWogzVgmVY=",
+  "Source": "WebElon",
+  "BasePath": "_content/WebElon",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/igorepov/Documents/Studing/С#Projects/Lab6/WebMark/WebMark.csproj",
+      "Version": 2,
+      "Source": "WebMark",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

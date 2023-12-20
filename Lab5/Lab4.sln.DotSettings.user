@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a4a94240_002Daf23_002D4a93_002D9aea_002D6cd04a2eeb51/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CheckDataBaseSaving #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::DE2FC1B8-FDF9-48A7-8DF8-4C35FE2F1D5F::net7.0::TestProject1.DbTest.CheckDataBaseSaving&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc9e4c82_002D6794_002D4b43_002Da80c_002D02fbb8063faf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CheckDataBaseSaving" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::DE2FC1B8-FDF9-48A7-8DF8-4C35FE2F1D5F::net7.0::TestProject1.DbTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f98efaee_002D70c7_002D40db_002D9aeb_002Dab5ba1dbfa21/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CheckDataBaseSaving #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::DE2FC1B8-FDF9-48A7-8DF8-4C35FE2F1D5F::net7.0::TestProject1.DbTest.CheckDataBaseSaving&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
